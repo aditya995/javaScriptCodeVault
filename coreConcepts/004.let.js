@@ -1,5 +1,5 @@
 /*
-node 0004.let
+node 004.let
 */
 
 /// let keyword
