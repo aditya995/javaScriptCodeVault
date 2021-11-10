@@ -1,23 +1,23 @@
 /*
-node variable
+node 001.variable
 */
 
 console.log('Finally 🍕🍕🍿');
 
 
-/** Hoisting with var declaration */
+/// Hoisting with var declaration 
 car = 12;   //  Value can be asigned before declaration!
 var car = 40;    
 console.log(car);
 
 
-/** Const Keyword */
+/// Const Keyword 
 const apple = 45;   // const variables must be Initialized
 console.log(apple);
+console.log('-----------');
 
-
-/** Data Types */
-console.log("\nData Types: \n");
+/// Data Types 
+console.log("Data Types: \n");
 data;
 console.log(typeof(data));  //undefined
 data = 8;
@@ -28,9 +28,9 @@ data = null;
 console.log(typeof(data));  //object
 data = true;
 console.log(typeof(data));  //boolean
+console.log('-----------');
 
-
-/** scoping */
+/// scoping 
 var a = null;
 //var a initialized before-hand
 console.log(typeof(a)); //object
@@ -41,3 +41,4 @@ console.log(typeof(a)); //number
 var a;  
 console.log(typeof(a)); // number
 //Type is still number ! not undefined type!
+

@@ -1,15 +1,15 @@
-# Node
-## Node project Creation setup
+## Node
+### Node project Creation setup
  - node --version   //  Checks the version of node
  - npm init //  Creates package.json ( keeps record of the dependencies)
 
-## Node-packages (dependencies)
+### Node-packages (dependencies)
  - ...
 
-## Node dev-dependencies
+### Node dev-dependencies
  - npm install -D nodemon
 
-## Node project Run setup
+### Node project Run setup
  - npm install //  Install dependencies form package.json
 
 ## git
@@ -49,3 +49,9 @@ Connect to a remote github repo--
 
 ## Command Prompt shortcuts
  - Get file names from that directory in the terminal `tab` or `shift` + `tab`
+
+# JavaScpipt
+## contents
+### CoreConcepts
+ 1. variables and data types
+ 2. operators and operations on various data types
