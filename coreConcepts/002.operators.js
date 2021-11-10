@@ -1,5 +1,5 @@
 /*
-node 002.var_let.js
+node 002.var_let
 */
 
 ///  var keyword

@@ -29,16 +29,3 @@ console.log(typeof(data));  //object
 data = true;
 console.log(typeof(data));  //boolean
 console.log('-----------');
-
-/// scoping 
-var a = null;
-//var a initialized before-hand
-console.log(typeof(a)); //object
-
-a = 8;  //  This value-assign will change the variable's type dynamically!
-console.log(typeof(a)); //number
-
-var a;  
-console.log(typeof(a)); // number
-//Type is still number ! not undefined type!
-

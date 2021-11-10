@@ -55,3 +55,5 @@ Connect to a remote github repo--
 ### CoreConcepts
  1. variables and data types
  2. operators and operations on various data types
+ 3. scope of var declaration
+ 4. let and it's scope
