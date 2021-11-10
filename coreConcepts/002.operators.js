@@ -5,9 +5,9 @@ node 002.var_let.js
 ///  var keyword
 // dynamically changes types!
 var a = 7, b = 8;
-console.log(typeof(a));
+console.log(typeof(a)); //number
 a = "value";
-console.log(typeof(a));
+console.log(typeof(a)); //string
 console.log('-----------');
 
 /* ******* Javascript Operators
