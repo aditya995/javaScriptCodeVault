@@ -4,10 +4,10 @@ node 003.scopeOFvar
 
 /// scoping of "var"
 var a = null;
-//var a initialized before-hand
+//var "a" initialized before-hand
 console.log(typeof (a)); //object
 
-a = 8;  //  This value-assign will change the variable's type dynamically!
+a = 8;  //  This value-assignment will change the variable's type dynamically!
 console.log(typeof (a)); //number
 
 var a;
@@ -36,7 +36,7 @@ globalCheck();
 // localIf -10, localElse undefined
 console.log(`localIf ${localIf}, localElse ${localElse}`);  //localIf undefined, localElse undefined
 /**
- * It is because of [functional scope], we cant access the local variables from outside
+ * We can access the local variables from outside. But value will be undefined !! [functional scope]
  */
 
 if (true) {
@@ -54,7 +54,7 @@ if (true) {
 console.log(`localIf ${localIf}, localElse ${localElse}`);  //Depends on if else execution
 
 /**
- * However, We can access the variables (declared in a child block) from outside, if that is in a block [block scope]
+ * We can access the variables (declared in a child block) from outside, if that is in a block [block scope]
  * In this case it is an if-else block
  */
 
