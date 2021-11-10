@@ -37,13 +37,12 @@ console.log('-----------');
 
 // Using opertors in two different types of data: [string with (number or bool or null or undefined)]
 //  string and other type data together- both operates as string 
-//  here a = "value", b = 8
-console.log(str1 + num1); // value8
-console.log(num1 + str1); // 8value
+console.log(str1 + num1); // Str10
+console.log(num1 + str1); // 10Str
 console.log(str1 + null1);  //Strnull
 console.log(str1 + bool1);  //Strtrue
 console.log(str1 + undefined1);  //Strundefined
-//  Other operations will result NaN (Not a Number)
+//  Other operations will result NaN for any data type with string (Not a Number)
 console.log(str1 - bool1); // NaN
 console.log(str1 / bool1); // NaN
 console.log(str1 * bool1); // NaN
@@ -65,8 +64,8 @@ console.log('-----------');
 // Using opertors in two different types of data: [bool with number]
 //  bool and number together- both operates as number [true => 1, false => 0]
 console.log('Add-');
-console.log(num1 + bool1);  //10
-console.log(num1 + bool2);  //11
+console.log(num1 + bool1);  //11
+console.log(num1 + bool2);  //10
 console.log('Subtract-');  
 console.log(num1 - bool1);  //9
 console.log(num1 - bool2);  //10
