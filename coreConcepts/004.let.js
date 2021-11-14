@@ -2,21 +2,42 @@
 node 004.let
 */
 
-/// let keyword
+/// let keyword, shadowing and overriding
 
 let value = 40;
 
+//  Shadowing: It happens when we redefine variable in different scope (block inside a block)
 if (true) {
+    let ifval = -100, elseval = -100;
     if (value > 0) {
-        let ifval = 1;
-        console.log(`value = ${value}, ifval = ${ifval}`);
-        //  cant print value of "elseval", will result error
+        let ifval = "ifvar";
+        console.log(`value = ${value}, ifval = ${ifval}, elseval = ${elseval}`);
+        //  ifval gets assigned with "ifval", "elseval" remains same 
     } else {
-        let elseval = 1;
-        console.log(`value = ${value}, elseval = ${elseval}`);
-        //  cant print value of "ifval", will result error
-    }    
+        let elseval = 'elseval';
+        console.log(`value = ${value}, ifval = ${ifval}, elseval = ${elseval}`);
+        //  elseval gets assigned with "elseval", "ifval" remains same
+    }
+    console.log(`value = ${value}, ifval = ${ifval}, elseval = ${elseval}`);
 }
-//  cant print value of "elseval" and "ifval", will result compilation error
-console.log(`value = ${value}`);
+//  cant print value of "elseval" and "ifval" [block scope], will result compilation error
+console.log(`value = ${value} `);
 
+
+//  overriding: value assign happens in different scope (block inside a block)
+console.log('------');
+value = 400;
+console.log(`value = ${value}`);
+function F () {
+    value = 1000;
+    if (value < 0) {
+        value = -500;
+        console.log(`value = ${value}`);
+    } else {
+        value = 500;
+        console.log(`value = ${value}`);
+    }
+    console.log(`value = ${value}`);
+}
+F();
+console.log(`value = ${value}`);

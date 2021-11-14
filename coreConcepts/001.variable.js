@@ -6,9 +6,20 @@ console.log('Finally 🍕🍕🍿');
 
 
 /// Hoisting with var declaration 
+
+//  Tip: always declare variable at the top
 car = 12;   //  Value can be asigned before declaration!
 var car = 40;    
 console.log(car);
+
+var newV = 2;
+function gg() {
+    console.log('newV = ' + newV);
+    // comment next line to see magic 😆
+    var newV;
+    newV = 8;
+}
+gg();
 
 
 /// Const Keyword 

@@ -22,3 +22,14 @@ person.name = 'Optimus Prime';
 
 console.log(person.age);
 console.log(person.name);
+
+// ES5(older) way of defining constant type of variable
+/***    Works on browser, not in nodejs **
+
+Object.defineProperty(window, 'PI', { value: 3.14, writable: false });
+
+PI = 4;
+//  Prints 3.14!
+console.log(PI);    //  Will not result compilation error
+
+/******/

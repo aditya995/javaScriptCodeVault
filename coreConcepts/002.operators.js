@@ -1,5 +1,5 @@
 /*
-node 002.var_let
+node 002.operators
 */
 
 ///  var keyword
@@ -33,7 +33,9 @@ console.log(undefined1 + undefined1); //NaN
 console.log('-----------');
 
 
-/// *******       Javascript Weird Behaviours          ********
+/// *******       Javascript Weird Behaviours for type conversion         ********
+
+//  Reference   https://www.youtube.com/watch?v=j9xuvChJftg
 
 // Using opertors in two different types of data: [string with (number or bool or null or undefined)]
 //  string and other type data together- both operates as string 
