@@ -28,7 +28,7 @@ console.log('-------3');
 
 var a = Number('ff4');
 console.log(a);
-console.log(typeof (a));
+console.log(typeof (a));    //Still type is number!! 
 var a = Number(false);
 console.log(a);
 var a = Number(true);

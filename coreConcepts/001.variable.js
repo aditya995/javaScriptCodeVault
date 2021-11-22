@@ -28,6 +28,18 @@ console.log(apple);
 console.log('-----------');
 
 /// Data Types 
+
+/**
+Primary Datatypes:
+String, Number, Boolean
+
+Composite Datatypes:
+Array, Object
+
+Special Datatypes:
+Undefined, Null
+
+ */
 console.log("Data Types: \n");
 data;
 console.log(typeof(data));  //undefined
