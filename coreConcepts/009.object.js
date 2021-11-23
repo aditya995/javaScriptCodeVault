@@ -22,7 +22,6 @@ var bike = {
         return this.sold;
     }
 };
-
 //  Properties can be added afterwards
 bike.model = 'a220';
 

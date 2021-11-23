@@ -33,7 +33,8 @@ console.log('-----------------1');
 
 // Primitive data types are always pass by value, cause premitive values are not mutable
 //  they can only be replaced of re-assigned!!
-let val1 = 10; 
+let val1 = 10;
+let val2 = val1;
 function passByVal(val) {
     val = 20;
 }
@@ -43,8 +44,9 @@ console.log(val1);
 let objA = {
     name: 'placeholder',
 };
-let objB = objA; // It does not create another object, simply points to the 'obj1'
-
+let objB = objA; // It does not create another object, simply points to the 'objA'
+objB.name = '';
+console.log(objA);
 function passByValObj(val) {
     // It will pass by value, cause It re-assigns the object with a new object!
     val = {

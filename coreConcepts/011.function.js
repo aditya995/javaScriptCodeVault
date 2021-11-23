@@ -6,10 +6,11 @@ node 011.function
 
 // function ****
 function add1(firstNum, secondNum) {
-    return firstNum + secondNum;
+    console.log(arguments); //  See all arguments as an array!! *
+    return arguments[0] + secondNum;
 }
 // Javascript doesnot allow function overloading
-var res = add1(2, 5); 
+var res = add1(2, 5, 8); // Even if we defined only 2 arguments for this function, we can still pass more or less then 2 args.**
 console.log(res);   //7
 
 // Constant as Default values (default values in arguments is in es6)   **
